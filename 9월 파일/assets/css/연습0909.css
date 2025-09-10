@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+}
+
+/* 이미지 늘어나는 거 적용하기 */
+/* ---------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Pretendard';
+    background-color: rgb(221, 221, 221);
+}
+
+.margin-right {
+    margin-right: 10px;
+}
+
+/* ------------------------------------ */
+
+.sec01-containar {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1600px;
+    gap: 10px;
+    display: flex;
+    box-sizing: border-box;
+
+}
+
+.sec01-box1 {
+    flex: 0 0 430px;
+    height: 980px;
+    color: white;
+    background-color: blue;
+    border-radius: 30px;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.sec01-containar01 {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: flex-start;
+    box-sizing: border-box;
+    gap: 10px;
+
+}
+
+.sec01-box2 {
+    flex-basis: 63%;
+    height: 440px;
+    background-color: paleturquoise;
+    color: white;
+    border-radius: 30px;
+    padding: 40px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+
+    /* margin-bottom: 20px; */
+}
+
+.sec01-box3-2 {
+
+    flex-basis: 20%;
+    height: 440px;
+    background-color: rgb(207, 207, 207);
+    color: #333;
+    border-radius: 30px;
+    padding: 40px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    /* margin-bottom: 20px; */
+}
+
+.box1 h2,
+.box2 h2 {
+    font-size: 70px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.box1 p {
+    font-size: 20px;
+    margin-top: 650px;
+    transition: 0.4s all ease-in-out;
+}
+
+.box2 p {
+    font-size: 20px;
+    margin-top: 280px;
+    transition: 0.4s all ease-in-out;
+
+}
+
+
+.sec01-box1:hover p,
+.sec01-box2:hover p,
+.sec01-box3-2:hover p {
+    transform: translateY(-50px);
+    /* 텍스트 살짝 위로 */
+}
+
+.sec01-box1:hover button,
+.sec01-box2:hover button,
+.sec01-box3-2:hover button {
+    transform: translateY(-100px);
+    /* 버튼 살짝 위로 */
+}
+
+.btn {
+    width: 130px;
+    text-decoration: none;
+    margin-top: 70px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+    align-self: flex-start;
+}
+
+/* .box-btn1,
+.box-btn2 {
+    text-decoration: none;
+    margin-top: 50px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    
+    transition: all 0.5s ease-in-out;
+} */
+
+/* .sec01-box1:hover .btn,
+.sec01-box2:hover .box-btn1,
+.sec01-box2:hover .box-btn2 {
+    opacity: 1;
+    transform: translateY(0);
+    /* 버튼 위로 등장 */
+/* } */

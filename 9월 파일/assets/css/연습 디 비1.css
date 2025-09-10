@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* kv 영역 */
+.kv-container{
+    width: 100%;
+    max-width: 1820px;
+    height: 650px;
+    margin: 0 auto;
+    background-color: palevioletred;
+    border-radius: 20px;
+    position: relative;
+}
+
+.kv-text{
+    margin: 0 auto;
+    max-width: 1540px;
+    padding: 150px 60px 350px 60px;
+    /* position: relative; */
+    color: white;
+    box-sizing: border-box;
+    
+}
+.kv-title{
+    font-size: 50px;
+    margin-bottom: 65px;
+    
+}
+.kv-btn{
+    font-size: 26px;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 10px 40px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    transition: 0.3s all ease-in-out;
+}
+.btn1:hover{
+    background-color: #00844a;
+}
+
+.btn2{
+    position: absolute;
+    bottom: 0%;
+    left: 60px;
+    border: none;
+    background-color: #00844a;
+}
+
+/* sec01 */
+.sec01{
+    width: 100%;
+    max-width: 1820px;
+    height: 650px;
+    margin: 0% auto;
+    
+}
+
+.sec01-container{
+    margin-top: 40px;
+    display: flex;
+    /* justify-content: space-between;    */
+    
+}
+.sec01-box01{
+    width: 70%;
+    height: 450px;
+    border-radius: 20px;
+    margin-right: 40px;
+    background-color: blueviolet;
+}
+.sec01-title{
+    margin-bottom: 20px;
+}
+.sec01-box01-text{
+    text-align: left;
+    height: 300px;
+    padding: 50px 0 0 50px;
+    margin-bottom: 20px;
+    color: white;
+    box-sizing: border-box;
+}
+.sec01-box01-button{
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    padding: 80px 0 80px 0;
+    color: white;
+        
+}
+.sec01-btn{
+    display: flex;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    transition: 0.3s all ease-in-out;
+} 
+.sec01-btn i{
+    color: white;
+    margin-left: 10px;
+
+}
+.sec01-btn:hover{
+    background-color: rgb(237, 73, 255);
+}
+.sec02-bigbox2{
+    width: 30%;
+}
+.sec01-box02{
+    height: 165px;
+    border-radius: 20px;
+    padding: 20px; 
+    background-color: paleturquoise;
+    margin-bottom: 40px;
+}
+.sec01-end{
+    font-size: 100px;
+    color: rgb(239, 239, 239);
+}
+
+/* sec02투자정보 */
+.sec02{
+    width: 100%;
+    background-color: rgb(225, 224, 224);
+    
+}
+
+.sec02-containar{
+    max-width: 1540px;
+    margin: 0 auto;
+    padding: 100px 0;
+    box-sizing: border-box;
+    
+}
+.sec02-title{
+    font-size: 30px;
+    display: flex;
+    padding: 0 20px;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+.sec02-btn{
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    padding: 10px 20px;
+}
+.sec02-box{
+    display: flex;
+    height: 300px;
+    
+   
+}
+.sec02-info{
+    display: flex;
+    width: 63%;
+    justify-content: space-around;
+    padding: 40px;
+    margin-right: 40px;
+    box-sizing: border-box;
+     background-color: white;
+     border-radius: 20px;
+}
+.sec02-box1 h2, .sec02-box1 p{
+    margin-bottom: 20px;
+}
+/* .sec02-box1 img{
+    
+    /* 위치하단으로 하는 거 까먹음    */
+
+.sec02-etc{
+    width: 32%;
+    border-radius: 20px;
+    background-color: white;
+    padding: 40px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* sec03 Environment */
+
+.sec03{
+    background-color: #9dc7b5;
+    box-sizing: border-box;
+}
+.sec03-container{
+    width: 1540px;
+    margin: 0% auto;
+    padding: 40px 0;
+}
+
+.sec03-box{
+    box-sizing: border-box;
+    margin: 40px 0;
+    background-color: rgba(255, 255, 255, 0.26);
+    width: 73%;
+    border-radius: 20px;
+    
+}
+.sec03-boxtitle{
+    display: flex;
+    height: 50px;
+    padding: 40px 40px 20px 40px;
+    border-bottom: 1px solid white;
+}
+.sec03-btn{
+    width:60px;
+    height: 30px;
+    margin-left: 40%;
+    border-radius: 10px;
+    border: none;
+    box-sizing: border-box;
+    padding: 5px 10px;
+}
+.sec03-boxtitle h3, p{
+    margin-right: 50px;
+}
+.sec03-boxtext{
+    padding: 40px 40px 40px 0;
+    display: flex;
+    max-width: 1200px;
+}
+.sec03-des{
+    padding: 40px;
+}
+.border-right{
+    border-right: 1px solid white;
+} 
+
+/* sec04 news */
+.sec04-container{
+    width: 1540px;
+    margin: 0 auto;
+}    
+
+.seo04-title{
+    padding: 40px 0 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.sec04-newcard{
+    display: flex;
+    
+}
+.sec04-new1{
+    width: 32%;
+    height: 486px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #9dc7b5;
+    margin-right: 40px;
+    position: relative;
+}
+.sec04-new1 h3{
+    margin-bottom: 20px;
+}
+.sec04-day{
+    position: absolute;
+    left: 40px;
+    bottom: 40px
+}
+.sec04-btn{
+    width: 80px;
+    height: px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+@media(max-width:1024px){
+    .sec01-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+    }
+    .sec01-box01{
+        width: 100%;
+
+    }
+    .sec02-bigbox2{
+        width: 100%;
+        margin-top: 40px;
+    }
+}

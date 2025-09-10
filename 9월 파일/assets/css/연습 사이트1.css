@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    font-family: "Roboto Condensed", sans-serif;
+    line-height: 1.1s;    
+}
+
+/* 컨드롤 'f' 해서 창에 색상이랑 입력크기 하고, ?/ 뭐바꾸기 라는데 이해안됌 */
+
+/* 변수선언 토큰  */
+.root{
+    --primary-color:#000000 ;
+    --black-color: #333743;
+    --white-color: #ffffff;
+    --gray-color:#999999;
+
+}
+/* commen 영역 */
+.pt-sans{
+    font-family: "PT Sans", sans-serif;
+    line-height: 1.8;
+}
+.container{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    /* 보통 컨텐츠 박스는 패딩 넣으면 안 넘어가용 */
+    box-sizing: border-box;
+    padding-left: 32px ;
+    padding-right: 32px;
+}
+/* 동일하게 들어가는거 추가로 고쳐서 넣기 */
+.title{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--black-color);
+}
+
+.desc{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: var(--gray-color);
+    font-family: "PT Sans", sans-serif;
+
+}
+/* /버튼 속성 가져와서 복붙하기 */
+.btn:hover {
+    color: var(--white-color);
+    background-color: var(--black-color);
+}
+
+/* 패딩 넣는거 놓침 */
+/* 메인 비주얼 */
+.kv-sec{
+    background-image: url(../imags/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--white-color);
+    padding:300px 0;                                                   
+}
+.kv-sub title{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.kv-title{
+    font-size: 60px;
+    font-weight: 500;
+    margin: 20px 0 10px 0;
+}
+
+.kv-desc{
+    font-size: 15px;
+    margin: 20px 0 10px;
+    color: var(--white-color);
+}
+
+.kv-btn{
+    border-color: var(--white-color);
+    color: var(--white-color);
+}
+
+.hero-btn:hover{
+    color: white;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+
+}
+.hero-text{
+    max-width: 550px;
+}
+
+
+/* info 영역 */
+
+.info-wrap{
+    padding: 120px 0;
+    
+}
+.info-wrap{
+    width: 100%;
+    max-width: 620px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-left: 32px ;
+    padding-right: 32px;
+
+}
+.info-title{
+      margin: 20px 0 35px;
+    text-align: center;
+    position: relative;
+}
+
+.info-title ::before{
+     content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white-color);
+    /* border: 1px solid red; */
+    z-index: -1;
+}
+
+.info-title::after{
+    content: '';
+    display: block;
+    width: 55px;
+    height: 80px;
+    border: 3px solid var(--primary-color);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* 포지션 이동하기 */
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    
+}
+
+.info-desc{
+   margin: 60px 0 10px;
+}
+.info-desc span{
+     font-size: 35px;
+    margin: 5px 15px 0 0;
+    color: var(--primary-color);
+    float: left;
+    line-height: 32px;
+}
+
+/* 패티 냠냠 패키지 영역*/
+.package-sec {
+    padding: 100px 0;
+    display: flex;
+}
+.package-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+.package-row > div {
+    display: flex;
+    width: 49%;
+    box-sizing: border-box;
+}
+.package-img img {
+    width: 100%;
+    background-size: contain;
+    object-fit: cover;
+}
+.package-text.pd-left {
+    padding-left: 50px;
+}
+.package-title {
+    margin: 20px 0 10px;
+}
+.package-value span {
+    font-size: 23px;
+    color: var(--primary-color);
+    font-weight: 600;
+    padding-left: 10px;
+}
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.package-row.margin-top {
+    margin-top: 70px;
+}
+.package-desc {
+    width: 80%;
+}
+
+.package-btn {
+    text-align: center;
+    margin-top: 90px;
+}
+
+
+/* 메리트~ */
+.merit-sec{
+    padding: 80px 0;
+    background-image: url(../imags/5.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.merit-title{
+    color: var(--white-color);
+    margin-bottom: 30px;
+}
+.merit-counter-wtap{
+    display: flex;
+    margin-top: 20px;
+    gap: 50px;
+
+}
+.counter h3{
+    font-size: 35px;
+    color: var(--white-color);
+    margin-bottom: 10px;
+
+}
+.merit-text{
+    width: 50%;
+}
+
+/* 리뷰영역 */
+.review-sec{
+    padding: 0;
+}
+.review-wrap{
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+.review-card-wrap{
+    width: 65%;
+    display: flex;
+    gap: 2%;
+}
+.review-text{
+    width: 33%;
+    margin-left: 80px;
+    box-sizing: border-box;   
+}
+
+.review-card{
+    width: 49%;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 10px 0.5px #999 ;
+    transition: 0.3s all ease-in-out;
+}
+.review-card:hover{
+    transform: translateY(-15px);
+}
+.review-card-text{
+    padding: 20px 25px 30px;
+}
+
+.review-img{
+    width: 100%;
+}
+
+.reveiw-title a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.review-meta{
+    font-size: 14px;
+    color: var(--gray-color);
+}
+.review-mata .author{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.review-action{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.review-action a{
+    color: var(--gray-color);
+    text-decoration: none;
+    font-size: 15px;
+}
+.review-card-btn{
+    padding: 5px 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    transition: 0.3s all ease-in-out;
+    
+}
+.review-card-btn:hover{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white-color);
+}
+/* 마진 메타랑 안 넣었어요.... */
+
+.review-icon .comments{
+    padding-right: 10px;
+}
+.review-icon a{
+    transition:0.3s all ease-in-out;
+}
+.review-icon a:hover{
+    color: var(--primary-color);
+}
+
+.review-text-title{
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.review-text-title ::before{
+    content: "#";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white-color);
+    border: 1px solid red;
+    z-index: -1;
+}
+.review-text-title ::after{
+     content: '';
+    display: block;
+    position: absolute;
+    width: 55px;
+    height: 80px;
+    border: 3px solid paleturquoise;
+    left: -25px;
+    top: 50%;
+    /* 포지션 이동하기!!!!!! */
+    transform: translate(0,-50%); 
+    z-index: -2;
+}
+.reveiw-btn-wrap{
+    margin-top: 30px;
+}
+
+@media (max-width:1024px){
+
+    .info-wrap{
+        max-width: 100%;
+    }
+
+     .package-row{
+        flex-direction: column;
+    }
+    .package-row>div{
+        width: 100%;
+    }
+    .package-text{
+        padding: 70px 0;
+    }
+    /* 리뷰영역 */
+    .review-wrap{
+        flex-direction: column;
+    }
+    .review-card-wrap{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .review-wrap >div, .review-card-wrap >div{
+        width: 100%;
+    }
+    .review-text{
+        margin: 100px 0 0 32px;
+        margin-left: 0;
+    }
+   
+}
+    
+
+
+@media(max-width:768px){
+    /* commen 영역 */
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    /* hero 영역 */
+    .kv-sub{
+        font-size: 25px;
+    }
+    .kv-title{
+        font-size: 35px;
+    }
+    .kv-desc{
+        font-size: 14px;
+    }
+    /* info */
+    .info-sec{
+        padding: 50px 0;
+    }
+
+    .info-warp{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .info-desc{
+        margin: 30px 0 10px;
+    }
+
+    /* sec03 */
+    .package-sec{
+        padding: 50PX 0;
+    }
+
+    .package-text{
+        padding: 30px 0;
+    }
+
+    .package-desc{
+        width: 100%;
+    }
+
+    /* pcleft 어디다 넣더라.. */
+    .package-text, .pd-left{
+    padding: 50px;
+    }
+
+    /* 메리트 */
+    .merit-text{
+        width: 100%;
+    }
+    .merit-counter-wtap{
+        gap:30px;
+        flex-direction: column;
+    }
+
+    .review-sec{
+        padding: 50px 0;
+    }
+
+     .review-text{
+        padding-left: 20px;
+    }
+
+
+
+}  
+
+

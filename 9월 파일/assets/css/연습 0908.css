@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.sec03{
+    margin: 0 auto;
+    max-width: 1600px;
+    
+}
+.sec03-titel{
+    text-align: center;
+}
+.sec03-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+}
+.card{
+    /* width: 32% 넓이 값 다시 */
+    height: 200px;
+    margin: 2%;
+    background-color: #f4f5f6;
+    border-radius: 20px;
+    text-align: left;
+    padding: 40px;
+    position: relative;
+}
+.card h3{
+    font-size: 25px;
+    margin-bottom: 80px;
+    color: rgb(70, 70, 70);
+
+}
+.card p{
+    color: rgb(100, 100, 100);
+}
+.card img{
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+}
+/* .sec03-box{
+    opacity: 0;
+} */
+
+/* 열 바뀌는 방법????? */
+@media(max-width:1600px){
+    .sec03-card{
+        width: 100%;
+        max-width: 1200px;
+        flex-direction: row;
+        justify-content: left;
+}
+}
